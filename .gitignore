@@ -1,0 +1,9 @@
+### os ###
+.DS_Store
+
+### local settings ###
+*.local
+local.*
+
+### ssh ###
+.ssh

@@ -1,0 +1,12 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = dev-satoshi
+	email = dev.satoshi.1016@gmail.com
+[core]
+	editor = code --wait
+[init]
+	defaultBranch = main

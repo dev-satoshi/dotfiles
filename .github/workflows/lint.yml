@@ -1,0 +1,20 @@
+name: Shell Script Lint
+
+on: [push]
+
+jobs:
+  lint:
+    name: Lint Shell scripts with ShellCheck
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install ShellCheck
+        run: sudo apt install -y shellcheck
+
+      - name: Run ShellCheck
+        run: |
+          find . -type f -name '*.sh' -not -path './.github/*' -print0 \
+          | xargs -0 shellcheck

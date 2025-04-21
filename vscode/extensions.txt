@@ -12,6 +12,7 @@ csstools.postcss
 dart-code.dart-code
 dart-code.flutter
 davidwoo.flutter-auto-import
+docker.docker
 donjayamanne.githistory
 dsznajder.es7-react-js-snippets
 eamodio.gitlens
@@ -46,6 +47,7 @@ shopify.ruby-extensions-pack
 shopify.ruby-lsp
 sianglim.slim
 sorbet.sorbet-vscode-extension
+sourcegraph.cody-ai
 standard.vscode-standard
 streetsidesoftware.code-spell-checker
 usernamehw.errorlens

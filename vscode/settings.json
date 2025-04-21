@@ -1,0 +1,50 @@
+{
+  "workbench.colorTheme": "Atom One Dark",
+  "editor.fontSize": 16,
+  "terminal.integrated.fontSize": 14,
+  "workbench.iconTheme": "material-icon-theme",
+  "[ruby]": {
+    "editor.defaultFormatter": "Shopify.ruby-lsp",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.rulers": [
+      120
+    ],
+    "editor.semanticHighlighting.enabled": true
+  },
+  "explorer.compactFolders": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "standard.engine": "ts-standard",
+  "standard.autoFixOnSave": true,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.fontFamily": "UDEV Gothic 35JPDOC",
+  "terminal.integrated.fontFamily": "Andale Mono",
+  "scm.inputFontFamily": "",
+  "makefile.configureOnOpen": false,
+  "notebook.insertFinalNewline": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "dart.flutterSdkPaths": [
+    "/Users/satoshi.nosaka/.asdf/installs/flutter/3.24.4-stable"
+  ],
+  "dart.flutterSdkPath": "/Users/satoshi.nosaka/flutter",
+  "editor.minimap.enabled": false,
+  "workbench.startupEditor": "none",
+  "editor.accessibilitySupport": "off",
+  "editor.codeLensFontSize": 16,
+  "editor.formatOnType": true,
+  "diffEditor.codeLens": true,
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "cody.debug.verbose": true,
+  "cody.suggestions.mode": "auto-edit"
+}

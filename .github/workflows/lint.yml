@@ -17,4 +17,4 @@ jobs:
       - name: Run ShellCheck
         run: |
           find . -type f -name '*.sh' -not -path './.github/*' -print0 \
-          | xargs -0 shellcheck
+          | xargs -0 shellcheck --shell=bash

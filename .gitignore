@@ -12,3 +12,11 @@ local.*
 /asdf/*
 !/asdf/.tool-versions
 !/asdf/plugins.txt
+
+### Android ###
+/android/sdk/
+/.android/
+/local.properties
+*.iml
+/.idea/
+/.gradle/

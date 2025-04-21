@@ -7,6 +7,6 @@ echo "「VSCode」のセットアップを開始しました"
 code --list-extensions > ~/dotfiles/vscode/extensions.txt
 
 # 拡張機能をインストール
-cat ~/dotfiles/vscode/extensions.txt | xargs -L 1 code --install-extension
+xargs -L 1 code --install-extension < ~/dotfiles/vscode/extensions.txt
 
 echo "「VSCode」のセットアップが完了しました"

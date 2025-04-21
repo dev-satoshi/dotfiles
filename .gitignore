@@ -7,3 +7,8 @@ local.*
 
 ### ssh ###
 .ssh
+
+### ASDF ###
+/asdf/*
+!/asdf/.tool-versions
+!/asdf/plugins.txt

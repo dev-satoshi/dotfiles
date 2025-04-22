@@ -11,4 +11,5 @@ sh "$INSTALL_DIR/scripts/vscode_setup.sh"
 sh "$INSTALL_DIR/scripts/xcode_setup.sh"
 sh "$INSTALL_DIR/scripts/android_setup.sh"
 sh "$INSTALL_DIR/scripts/link_dotfiles.sh"
+
 echo "「dotfiles」のセットアップが完了しました"

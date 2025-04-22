@@ -10,7 +10,7 @@ LINKS=(
   "$DOTFILES_DIR/zsh/.zshrc:$HOME/.zshrc"
   "$DOTFILES_DIR/zsh/.zshenv:$HOME/.zshenv"
   "$DOTFILES_DIR/git/.gitconfig:$HOME/.gitconfig"
-  # "$DOTFILES_DIR/git/.gitignore:$HOME/.gitignore"
+  "$DOTFILES_DIR/git/.gitignore:$HOME/.gitignore"
   "$DOTFILES_DIR/git/.gitattributes:$HOME/.gitattributes"
   "$DOTFILES_DIR/aws/config:$HOME/.aws/config"
   "$DOTFILES_DIR/vscode/settings.json:$HOME/Library/Application Support/Code/User/settings.json"

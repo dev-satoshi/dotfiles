@@ -20,3 +20,6 @@ local.*
 *.iml
 /.idea/
 /.gradle/
+
+### AWS ###
+aws/credentials

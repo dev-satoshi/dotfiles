@@ -1,12 +1,25 @@
+[user]
+	name = dev-satoshi
+	email = dev.satoshi.1016@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	autocrlf = input
+	editor = code --wait
+[http]
+	sslVerify = false
+[branch]
+	autosetuprebase = always
+[push]
+	default = tracking
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+	interactive = auto
+	grep = auto
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[user]
-	name = dev-satoshi
-	email = dev.satoshi.1016@gmail.com
-[core]
-	editor = code --wait
-[init]
-	defaultBranch = main

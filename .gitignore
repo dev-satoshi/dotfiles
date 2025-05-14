@@ -9,17 +9,17 @@ local.*
 .ssh
 
 ### ASDF ###
-config/asdf/*
-!/config/asdf/.tool-versions
-!/config/asdf/plugins.txt
+/asdf/*
+!/asdf/.tool-versions
+!/asdf/plugins.txt
 
 ### Android ###
-config/android/sdk/
-config/.android/
-config/local.properties
+/android/sdk/
+/.android/
+/local.properties
 *.iml
-config/.idea/
+/.idea/
 /.gradle/
 
 ### AWS ###
-config/aws/credentials
+aws/credentials

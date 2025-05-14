@@ -11,4 +11,4 @@ else
   git clone https://github.com/dev-satoshi/dotfiles "$INSTALL_DIR"
 fi
 
-sh "$INSTALL_DIR/scripts/setup/setup.sh"
+sh "$INSTALL_DIR/scripts/setup.sh"

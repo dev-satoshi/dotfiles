@@ -16,9 +16,14 @@ precmd () { vcs_info }
 
 # ASDF
 export ASDF_DATA_DIR="$HOME/dotfiles/asdf"
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
-autoload -Uz compinit && compinit
+export PATH="$ASDF_DATA_DIR/bin:$ASDF_DATA_DIR/shims:$PATH"
+if [ -f "$ASDF_DATA_DIR/asdf.sh" ]; then
+  . "$ASDF_DATA_DIR/asdf.sh"
+fi
+if [ -f "$ASDF_DATA_DIR/completions/asdf.zsh" ]; then
+  fpath=("$ASDF_DATA_DIR/completions" $fpath)
+  autoload -Uz compinit && compinit
+fi
 
 # Android SDK
 export ANDROID_HOME=$HOME/dotfiles/android/sdk

@@ -12,6 +12,7 @@ LINKS=(
   "$DOTFILES_DIR/git/.gitconfig:$HOME/.gitconfig"
   "$DOTFILES_DIR/git/.gitignore:$HOME/.gitignore"
   "$DOTFILES_DIR/git/.gitattributes:$HOME/.gitattributes"
+  "$DOTFILES_DIR/asdf/.tool-versions:$HOME/.tool-versions"
   "$DOTFILES_DIR/aws/config:$HOME/.aws/config"
   "$DOTFILES_DIR/vscode/settings.json:$HOME/Library/Application Support/Code/User/settings.json"
   "$DOTFILES_DIR/android/sdk:$HOME/Library/Android/sdk"

@@ -38,10 +38,7 @@
   "makefile.configureOnOpen": false,
   "notebook.insertFinalNewline": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "dart.flutterSdkPaths": [
-    "/Users/satoshi.nosaka/.asdf/installs/flutter/3.24.4-stable"
-  ],
-  "dart.flutterSdkPath": "/Users/satoshi.nosaka/flutter",
+  "dart.flutterSdkPath": "/Users/satoshi.nosaka/dotfiles/asdf/installs/flutter/3.29.2-stable",
   "editor.minimap.enabled": false,
   "workbench.startupEditor": "none",
   "editor.accessibilitySupport": "off",

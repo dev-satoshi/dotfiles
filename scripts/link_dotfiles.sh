@@ -7,15 +7,15 @@ DOTFILES_DIR="$HOME/dotfiles"
 
 # リンクを作成するファイル一覧（キー：シンボリックリンク先、値：dotfiles内の実ファイル）
 LINKS=(
-  "$DOTFILES_DIR/config/zsh/.zshrc:$HOME/.zshrc"
-  "$DOTFILES_DIR/config/zsh/.zshenv:$HOME/.zshenv"
-  "$DOTFILES_DIR/config/git/.gitconfig:$HOME/.gitconfig"
-  "$DOTFILES_DIR/config/git/.gitignore:$HOME/.gitignore"
-  "$DOTFILES_DIR/config/git/.gitattributes:$HOME/.gitattributes"
-  "$DOTFILES_DIR/config/aws/config:$HOME/.aws/config"
-  "$DOTFILES_DIR/config/vscode/settings.json:$HOME/Library/Application Support/Code/User/settings.json"
-  "$DOTFILES_DIR/config/android/sdk:$HOME/Library/Android/sdk"
-  "/opt/homebrew/share/android-commandlinetools/cmdline-tools/latest:$DOTFILES_DIR/config/android/sdk/cmdline-tools/latest"
+  "$DOTFILES_DIR/zsh/.zshrc:$HOME/.zshrc"
+  "$DOTFILES_DIR/zsh/.zshenv:$HOME/.zshenv"
+  "$DOTFILES_DIR/git/.gitconfig:$HOME/.gitconfig"
+  "$DOTFILES_DIR/git/.gitignore:$HOME/.gitignore"
+  "$DOTFILES_DIR/git/.gitattributes:$HOME/.gitattributes"
+  "$DOTFILES_DIR/aws/config:$HOME/.aws/config"
+  "$DOTFILES_DIR/vscode/settings.json:$HOME/Library/Application Support/Code/User/settings.json"
+  "$DOTFILES_DIR/android/sdk:$HOME/Library/Android/sdk"
+  "/opt/homebrew/share/android-commandlinetools/cmdline-tools/latest:$DOTFILES_DIR/android/sdk/cmdline-tools/latest"
 )
 
 # すべてのリンクを作成

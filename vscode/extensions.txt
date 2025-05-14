@@ -1,6 +1,8 @@
 aaron-bond.better-comments
+adelphes.android-dev-ext
 akamud.vscode-theme-onedark
 alexisvt.flutter-snippets
+antonydalmiere.android-support
 arjun.swagger-viewer
 bierner.markdown-mermaid
 bung87.vscode-gemfile
@@ -17,6 +19,7 @@ donjayamanne.githistory
 dsznajder.es7-react-js-snippets
 eamodio.gitlens
 esbenp.prettier-vscode
+fwcd.kotlin
 github.codespaces
 github.copilot
 github.copilot-chat

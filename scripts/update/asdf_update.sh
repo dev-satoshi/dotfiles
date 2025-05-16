@@ -10,7 +10,7 @@ asdf plugin list --urls > "$HOME/dotfiles/asdf/plugins.txt"
 mkdir -p "$HOME/dotfiles/asdf"
 
 # .tool-versionsを初期化
-> "$HOME/dotfiles/asdf/.tool-versions"
+: > "$HOME/dotfiles/asdf/.tool-versions"
 
 # 各プラグインの全バージョンを取得して出力
 for plugin in $(asdf plugin list); do

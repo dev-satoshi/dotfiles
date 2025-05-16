@@ -12,8 +12,9 @@ done < ~/dotfiles/asdf/plugins.txt
 while IFS= read -r line; do
   # 空行スキップ
   [[ -z "$line" ]] && continue
+
   # 先頭の単語がプラグイン名、残りがバージョン一覧
-  set -- $line
+  set -- "$line"
   plugin=$1
   shift
   for version in "$@"; do

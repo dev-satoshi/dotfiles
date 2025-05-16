@@ -1,6 +1,6 @@
 # dotfiles
 
-## Installation
+## Instal
 ```
 $ curl -sL https://raw.githubusercontent.com/dev-satoshi/dotfiles/main/install.sh | sh
 ```

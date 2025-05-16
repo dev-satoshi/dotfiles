@@ -2,10 +2,10 @@
 
 ## Installation
 ```
-$ curl -sL https://github.com/dev-satoshi/dotfiles/install.sh | sh
+$ curl -sL https://raw.githubusercontent.com/dev-satoshi/dotfiles/main/install.sh | sh
 ```
 
 ## Update
 ```
-$ curl -sL https://github.com/dev-satoshi/dotfiles/update.sh | sh
+$ curl -sL https://raw.githubusercontent.com/dev-satoshi/dotfiles/main/update.sh | sh
 ```

@@ -14,10 +14,6 @@ fi
 # パッケージリストを更新
 brew update
 
-# インストール済みのbrewパッケージを書き出す（VSCode関連を除く）
-brew bundle dump --force --file=~/dotfiles/homebrew/Brewfile
-sed -i '' '/^vscode /d' ~/dotfiles/homebrew/Brewfile
-
 # Brewfileを元にインストール
 brew bundle --file=~/dotfiles/homebrew/Brewfile
 

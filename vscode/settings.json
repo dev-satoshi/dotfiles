@@ -3,6 +3,7 @@
   "editor.fontSize": 16,
   "terminal.integrated.fontSize": 14,
   "workbench.iconTheme": "material-icon-theme",
+  "files.insertFinalNewline": true,
   "[ruby]": {
     "editor.defaultFormatter": "Shopify.ruby-lsp",
     "editor.formatOnSave": true,

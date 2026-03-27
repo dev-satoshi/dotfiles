@@ -48,5 +48,8 @@
   "diffEditor.codeLens": true,
   "editor.inlineSuggest.suppressSuggestions": true,
   "cody.debug.verbose": true,
-  "cody.suggestions.mode": "auto-edit"
+  "cody.suggestions.mode": "auto-edit",
+  "git.suggestSmartCommit": false,
+  "workbench.editor.enablePreview": false,
+  "github.copilot.nextEditSuggestions.enabled": true
 }

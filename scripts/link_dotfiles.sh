@@ -8,6 +8,7 @@ DOTFILES_DIR="$HOME/dotfiles"
 # リンクを作成するファイル一覧（キー：シンボリックリンク先、値：dotfiles内の実ファイル）
 LINKS=(
   "$DOTFILES_DIR/zsh/.zshrc:$HOME/.zshrc"
+  "$DOTFILES_DIR/zsh/.zprofile:$HOME/.zprofile"
   "$DOTFILES_DIR/zsh/.zshenv:$HOME/.zshenv"
   "$DOTFILES_DIR/git/.gitconfig:$HOME/.gitconfig"
   "$DOTFILES_DIR/git/.gitignore:$HOME/.gitignore"
@@ -16,7 +17,7 @@ LINKS=(
   "$DOTFILES_DIR/aws/config:$HOME/.aws/config"
   "$DOTFILES_DIR/vscode/settings.json:$HOME/Library/Application Support/Code/User/settings.json"
   "$DOTFILES_DIR/android/sdk:$HOME/Library/Android/sdk"
-  "/opt/homebrew/share/android-commandlinetools/cmdline-tools/latest:$DOTFILES_DIR/android/sdk/cmdline-tools/latest"
+  "/opt/homebrew/share/android-commandlinetools/cmdline-tools/latest:$HOME/Library/Android/sdk/cmdline-tools/latest"
 )
 
 # すべてのリンクを作成

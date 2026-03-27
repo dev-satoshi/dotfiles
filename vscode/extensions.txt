@@ -35,6 +35,7 @@ mathiasfrohlich.kotlin
 mhutchie.git-graph
 misogi.ruby-rubocop
 mosapride.zenkaku
+ms-azuretools.vscode-containers
 ms-azuretools.vscode-docker
 ms-ceintl.vscode-language-pack-ja
 ms-vscode-remote.remote-ssh

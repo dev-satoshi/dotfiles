@@ -3,24 +3,33 @@ set -euo pipefail
 
 echo "「Android」のセットアップを開始しました"
 
-SDK_DIR="/opt/homebrew/share/android-commandlinetools"
-CMDLINE_TOOLS_DIR="/opt/homebrew/share/android-commandlinetools/cmdline-tools/latest"
+# Homebrew のコマンドラインツール群
+CMDLINE_TOOLS_ROOT="/opt/homebrew/share/android-commandlinetools"
 
-if [ -d "$CMDLINE_TOOLS_DIR" ]; then
-  :
-else
-  # パッケージをインストール
-  sdkmanager --install "cmdline-tools;latest" \
-                       "platform-tools" \
-                       "platforms;android-34" \
-                       "build-tools;34.0.0" \
-                       "emulator"
+# SDK 全体を指すディレクトリ（IDE からはこっちを見せる）
+SDK_ROOT="$HOME/Library/Android/sdk"
+
+# Homebrew 版の sdkmanager が使えるか確認
+if ! command -v sdkmanager >/dev/null; then
+  echo "ERROR: sdkmanager が見つかりません。PATH を確認してください。" >&2
+  exit 1
 fi
+
+sdkmanager --sdk_root="$SDK_ROOT" \
+            --install \
+              "cmdline-tools;latest" \
+              "platform-tools" \
+              "platforms;android-35" \
+              "system-images;android-35;google_apis_playstore;arm64-v8a" \
+              "build-tools;35.0.1" \
+              "build-tools;36.0.0" \
+              "sources;android-35" \
+              "emulator"
 
 # Androidのライセンスに同意
 yes | flutter doctor --android-licenses || true
 
 # FlutterにSDKパスを教える
-flutter config --android-sdk "$SDK_DIR"
+flutter config --android-sdk "$SDK_ROOT"
 
 echo "「Android」のセットアップが完了しました"

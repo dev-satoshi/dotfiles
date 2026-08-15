@@ -5,6 +5,13 @@ echo "「シンボリックリンク」の作成を開始しました"
 
 DOTFILES_DIR="$HOME/dotfiles"
 
+# Homebrewのインストール先（Apple Silicon: /opt/homebrew、Intel: /usr/local）
+if [ "$(uname -m)" = "arm64" ]; then
+  BREW_PREFIX="/opt/homebrew"
+else
+  BREW_PREFIX="/usr/local"
+fi
+
 # リンクを作成するファイル一覧（キー：シンボリックリンク先、値：dotfiles内の実ファイル）
 LINKS=(
   "$DOTFILES_DIR/zsh/.zshrc:$HOME/.zshrc"
@@ -19,7 +26,7 @@ LINKS=(
   "$DOTFILES_DIR/claude/settings.json:$HOME/.claude/settings.json"
   "$DOTFILES_DIR/claude/statusline-command.sh:$HOME/.claude/statusline-command.sh"
   "$DOTFILES_DIR/android/sdk:$HOME/Library/Android/sdk"
-  "/opt/homebrew/share/android-commandlinetools/cmdline-tools/latest:$HOME/Library/Android/sdk/cmdline-tools/latest"
+  "$BREW_PREFIX/share/android-commandlinetools/cmdline-tools/latest:$HOME/Library/Android/sdk/cmdline-tools/latest"
 )
 
 # すべてのリンクを作成

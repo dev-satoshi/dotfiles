@@ -3,5 +3,11 @@
     "type": "command",
     "command": "~/.claude/statusline-command.sh"
   },
-  "theme": "dark"
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "effortLevel": "xhigh",
+  "tui": "fullscreen",
+  "theme": "dark-ansi",
+  "skipAutoPermissionPrompt": true
 }

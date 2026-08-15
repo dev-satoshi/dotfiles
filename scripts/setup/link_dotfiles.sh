@@ -17,6 +17,7 @@ LINKS=(
   "$DOTFILES_DIR/aws/config:$HOME/.aws/config"
   "$DOTFILES_DIR/vscode/settings.json:$HOME/Library/Application Support/Code/User/settings.json"
   "$DOTFILES_DIR/claude/settings.json:$HOME/.claude/settings.json"
+  "$DOTFILES_DIR/claude/statusline-command.sh:$HOME/.claude/statusline-command.sh"
   "$DOTFILES_DIR/android/sdk:$HOME/Library/Android/sdk"
   "/opt/homebrew/share/android-commandlinetools/cmdline-tools/latest:$HOME/Library/Android/sdk/cmdline-tools/latest"
 )

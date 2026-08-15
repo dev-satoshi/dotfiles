@@ -3,9 +3,6 @@ set -euo pipefail
 
 echo "「Android」のセットアップを開始しました"
 
-# Homebrew のコマンドラインツール群
-CMDLINE_TOOLS_ROOT="/opt/homebrew/share/android-commandlinetools"
-
 # SDK 全体を指すディレクトリ（IDE からはこっちを見せる）
 SDK_ROOT="$HOME/Library/Android/sdk"
 

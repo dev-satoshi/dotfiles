@@ -29,3 +29,6 @@ fi
 export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
 export PATH="$PATH:$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/tools/bin"
 export PATH="$HOME/Library/Python/3.9/bin:$PATH"
+
+# Claude Code をスリープさせずに実行
+alias claude="caffeinate -ims $HOME/.local/bin/claude"
